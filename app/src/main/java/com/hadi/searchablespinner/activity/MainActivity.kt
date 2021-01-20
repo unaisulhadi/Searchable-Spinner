@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
 //        spinnerDialog.setListItemColor(R.color.md_white_1000)
 //        spinnerDialog.setItemsDividerColor(R.color.md_black_1000)
 
-        spinnerDialog.bindOnSpinnerListener(object : SpinnerClickListener {
+        spinnerDialog.setOnSpinnerItemSelectListener(object : SpinnerClickListener {
             override fun onItemClick(item: User, position: Int) {
                 tvSelected.text = "Name : ${item.name}\nEmail : ${item.email}\nScore : ${item.score}\nPosition : ${position}"
             }

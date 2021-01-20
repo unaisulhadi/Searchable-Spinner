@@ -138,7 +138,7 @@ class SpinnerDialog(activity: Activity, var items: ArrayList<User>) {
         this.dTitle = dialogTitle
     }
 
-    fun bindOnSpinnerListener(onSpinnerItemClick: SpinnerClickListener?) {
+    fun setOnSpinnerItemSelectListener(onSpinnerItemClick: SpinnerClickListener?) {
         this.onSpinnerItemClick = onSpinnerItemClick
     }
 
